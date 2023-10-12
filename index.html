@@ -50,13 +50,23 @@
             width: 50px;
             justify-content: center;
             align-items: center;
+            display: flex;
+        }
+        .bars:hover{
+            padding: 5px;
+            background-color: azure;
         }
         div#move_bars2{
-            background-color: antiquewhite;
-            width: 25px;
-            height: 25px;
+            width: 0px;
+            height: 0px;
+            border-left: 30px solid azure;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
             justify-content: center;
             align-items: center;
+        }
+        .move_bars_rotate{
+            rotate: 180deg;
         }
 
         div#game_images {
@@ -67,6 +77,9 @@
         .games:hover {
             padding: 5px;
             background-color: azure;
+        }
+        .games {
+            box-shadow: 5px 5px 10px black;
         }
         .game_name{
             text-align: center;
@@ -108,8 +121,8 @@
     <div id="box_center">
         <h2>Game guides for you</h2><br>
         <div id="game_images">
-            <div id="move_bars"><p><</p>
-            <div id="move_bars2"><</div>
+            <div id="move_bars" class="bars">
+            <div id="move_bars2" class="move_bars_rotate"></div>
             </div>
             <div class="game_name">
                 <li><a href="html/devil_may_cry_3.html"><img class="games"
@@ -129,8 +142,8 @@
                             width="200px" height="250px"></a></li>
                 <h2>God Hand</h2>
             </div>
-            <div id="move_bars"><p>></p>
-                <div id="move_bars2">></div>
+            <div id="move_bars" class="bars">
+                <div id="move_bars2"></div>
             </div>
         </div>
         <br>
@@ -149,5 +162,4 @@
         </div>
     </div>
 </body>
-
 </html>
